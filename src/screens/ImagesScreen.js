@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 
 
 import ImageDetail from '../Components/ImageDetails';
@@ -12,6 +12,7 @@ const ImagesScreen = () => {
     
 
     <View>
+    <ScrollView>
         
             < ImageDetail title = "Forest" imageSource = {require('../../assets/forest.jpg')} />
             <ImageDetail title = "Beach" imageSource = {require('../../assets/beach.jpg')} />
@@ -21,6 +22,7 @@ const ImagesScreen = () => {
             <ImageDetail title = "Forest" imageSource = {require('../../assets/forest.jpg')} />
             <ImageDetail title = "Forest" imageSource = {require('../../assets/forest.jpg')} />
             <ImageDetail title = "Forest" imageSource = {require('../../assets/forest.jpg')} />
+            </ScrollView>
         </View>
     );
 };

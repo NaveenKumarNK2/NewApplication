@@ -9,7 +9,7 @@ class Screens extends Component {
     checkLogin(){
         const {username , password } = this.state
         if(username == 'admin' && password == 'admin'){
-            this.props.navigation.navigate('ImagesScreen')
+            this.props.navigation.navigate('ListScreen')
         }else{
             Alert.alert('Error', 'Username/Password mismatch',[{
                 text:'okay'
@@ -21,7 +21,7 @@ class Screens extends Component {
 
     return(
         <View  style ={parent} >
-            <Text style = {heading}>Welcome to the Images World</Text>
+            <Text style = {heading}>Students Details </Text>
             <TextInput  style = {input}  placeholder ="username" onChangeText = {text => this.setState ({username: text})}/>
             <TextInput   style = {input}  secureTextEntry = {true} placeholder ="password" onChangeText = {text => this.setState ({password: text})}/>
             <Button 
