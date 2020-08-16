@@ -1,7 +1,6 @@
 import React from 'react';
-import {Text, StyleSheet} from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
-
+import AddressComponent from '../Components/AddressComponent';
 
 const ListScreen = () => {
     const friends = [
@@ -24,25 +23,12 @@ const ListScreen = () => {
        data = {friends}
        renderItem = {({item}) => {
            return (
-            
-           <Text style={styles.textStyle}>{item.name} - Address {item.Address}</Text>
-           
+                <AddressComponent name = {item.name} Address = {item.Address}/>
            );
            
        }}
        />
     );
-
-        
-
-        
-    
 };
-const styles=StyleSheet.create({
-    textStyle:{
-    marginVertical: 50
-}
-
-});
 
 export default ListScreen;
