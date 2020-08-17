@@ -3,16 +3,36 @@ import {Text, StyleSheet, View} from 'react-native';
 
 const AddressComponent = (props) => {
     return(
-        <View>
-            <Text>{props.name}</Text>
-            <Text style={styles.textStyle}>Address {props.Address}</Text>
+        <View 
+             style={styles.parent}>
+            <Text style={styles.nameStyle}>{props.name}</Text>
+            <Text style={styles.textStyle}>{props.No}</Text>
+            <Text style={styles.textStyle}>{props.Address}</Text>
+            <Text style={styles.textStyle}>{props.Landmark}</Text>
+            <Text style={styles.textStyle}>{props.City}</Text>
+            <Text>-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-</Text>
         </View>
-    )
-}
+    );
+};
 
 const styles=StyleSheet.create({
+          
     textStyle:{
-        marginBottom: 50
+        marginBottom: 5,
+        marginVertical:1,
+        marginHorizontal:30
+    },
+    parent:{
+        
+        flexDirection:'column',
+        backgroundColor:'skyblue'
+
+    },
+    nameStyle:{
+        color:'blue',
+        fontSize:15,
+        marginHorizontal:30,
+        fontStyle:'italic'
     }
 });
 

@@ -4,18 +4,15 @@ import AddressComponent from '../Components/AddressComponent';
 
 const ListScreen = () => {
     const friends = [
-        {name : 'murugan', Address: '2/203,Ambalcolony,Tirupur'},
-        {name : 'Branitharan' , Address: '2/204,Ambalcolony,Tirupur'},
-        {name : 'Naveenkumar',Address: '2/205,Ambalcolony,Tirupur'},
-        {name : 'Senthil', Address: '2/202,Ambalcolony,Tirupur'},
-        {name : 'santhosh', Address:'2/206,Ambalcolony,Tirupur'},
-        {name : 'John', Address: '2/207,Ambalcolony,Tirupur'},
-        {name : 'ashik',Address: '2/209,Ambalcolony,Tirupur'},
-        {name : 'Thiru',Address: '2/208,Ambalcolony,Tirupur'},
-        {name : 'Senthilkumar', Address: '2/203,Ambalcolony,Tirupur'},
-        {name : 'saran', Address:'2/203,Ambalcolony,Tirupur'},
-        {name : 'sineevasan', Address: '2/203,Ambalcolony,Tirupur'},
-        {name : 'mubarak',Address: '2/203,Ambalcolony,Tirupur'}
+      
+        {name : 'Naveenkumar',No:'No.22',Address: '2/205,Ambalcolony,',Landmark:'Avinashi,',City:'Tirupur - 641654'},
+        {name : 'Senthil', No:'No.23',Address: '2/202,Ambalcolony,', Landmark:'Avinashi,',City:'Tirupur - 641654'},
+        {name : 'santhosh', No:'No.24', Address:'2/206,Ambalcolony,',Landmark:'Avinashi',City:'Tirupur- 641654'},
+        {name : 'John', No:'No.25',Address: '2/207,Ambalcolony,',Landmark:'Avinashi,',City:'Tirupur- 641654'},
+        {name : 'ashik',No:'No.26',Address: '2/209,Ambalcolony,', Landmark:'Avinashi,',City:'Tirupur- 641654'},
+        {name : 'karthi',No:'No.27',Address: '2/208,Ambalcolony,',Landmark:'Avinashi,',City:'Tirupur- 641654'},
+        {name : 'Senthilkumar',No:'No.28', Address: '2/203,Ambalcolony,',Landmark:'Avinashi,',City:'Tirupur- 641654'},
+      
     ];
     return(
        < FlatList
@@ -23,7 +20,8 @@ const ListScreen = () => {
        data = {friends}
        renderItem = {({item}) => {
            return (
-                <AddressComponent name = {item.name} Address = {item.Address}/>
+                <AddressComponent name = {item.name} No = {item.No} Address = {item.Address} Landmark ={item.Landmark}
+                City = {item.City}/>
            );
            
        }}

@@ -1,26 +1,35 @@
 import{StyleSheet} from 'react-native';
 
 
+
 export default StyleSheet.create ({
 
    
     heading: {
-         
+
         fontSize: 25,
-        textAlign: 'center'
+        textAlign: 'center',
+               
     },
 
     input:{
-        marginLeft: 20,
-        marginRight: 20,
-        borderColor: 'black',
-        borderWidth: 1,
-        marginVertical: 50,
-    },
+        marginLeft: 5,
+        marginRight: 5,
+        borderColor: 'skyblue',
+        borderWidth: 2,
+        marginVertical: 20,
+            },
     
     parent:{
-        
-        justifyContent: 'center'
+        flex: 1,
+        justifyContent: 'center',
+       
+
+    },
+    backgroundContainer: {
+        width: '100%',
+        height: '100%',
+        alignItems:'center'
     }
 
 });
