@@ -1,33 +1,39 @@
 import React, {useState} from 'react';
-import {Text, View, Button, StyleSheet}from 'react-native';
+import { View, Button}from 'react-native';
+import StateComponenets from '../../src/Components/StateComponents';
+
 
 const StateScreen = () => {
     const [name, setName] = useState('Naveen');
     const click =() => {
         setName('Kumar');
     }
+    
     return(
-        <View style={styles.textStyle}>
-             <Text>Name: {name}</Text>
-             <View style={styles.ButtonStyle} />
-             <Button
+           
+           <View>
+            <StateComponenets name={name}/>
+
+            <Button
                title='Click'
                onPress ={click}/>
                
-        </View>
+            <StateComponenets name={name}/>
+          
+                              
+             <Button
+               title='Click'
+               onPress ={click}/>    
+
+            <StateComponenets name={name}/>
+               <Button
+               title='Click'
+               onPress ={click}/>
+               </View>
+               
     );
 
-}
-const styles=StyleSheet.create({
-    textStyle:{
-        flex:1,
-        justifyContent:'center',
-        alignItems:'center'
 
-    },
-    ButtonStyle:{
-        marginTop:20
-    }
+};
 
-});
 export default StateScreen;
