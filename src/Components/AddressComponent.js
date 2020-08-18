@@ -10,7 +10,7 @@ const AddressComponent = (props) => {
             <Text style={styles.textStyle}>{props.Address}</Text>
             <Text style={styles.textStyle}>{props.Landmark}</Text>
             <Text style={styles.textStyle}>{props.City}</Text>
-            <Text>-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-</Text>
+        
         </View>
     );
 };
@@ -25,7 +25,11 @@ const styles=StyleSheet.create({
     parent:{
         
         flexDirection:'column',
-        backgroundColor:'skyblue'
+        backgroundColor:'skyblue',
+        borderWidth:3,
+        margin:10,
+        marginTop:20,
+        padding:20
 
     },
     nameStyle:{
