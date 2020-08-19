@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Button}from 'react-native';
+import { View}from 'react-native';
 import StateComponenets from '../../src/Components/StateComponents';
 
 
@@ -12,23 +12,12 @@ const StateScreen = () => {
     return(
            
            <View>
-            <StateComponenets name={name}/>
 
-            <Button
-               title='Click'
-               onPress ={click}/>
+            <StateComponenets name={name} click ={click}/>
+            <StateComponenets name={name} click={click}/> 
+            <StateComponenets name={name} click={click}/>
+           
                
-            <StateComponenets name={name}/>
-          
-                              
-             <Button
-               title='Click'
-               onPress ={click}/>    
-
-            <StateComponenets name={name}/>
-               <Button
-               title='Click'
-               onPress ={click}/>
                </View>
                
     );

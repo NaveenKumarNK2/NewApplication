@@ -1,15 +1,20 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet,Button} from 'react-native';
 
 const StateComponent = (props) => {
+    
     return(
         <View >
     <Text style={styles.textStyle}>{props.name}</Text>
+    <Button 
+    title = 'click'
+    onPress = {props.click}/>
+   
    
            
             
     </View>
-    )
+    );
 }
 const styles = StyleSheet.create({
 

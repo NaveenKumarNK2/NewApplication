@@ -5,6 +5,7 @@ import ImagesScreen from './src/screens/ImagesScreen';
 import ImageDetails from './src/Components/ImageDetails';
 import ListScreen from './src/screens/ListScreen';
 import StateScreen from './src/screens/StateScreen';
+import DataScreen from './src/screens/DataScreen';
 
 
 
@@ -15,12 +16,13 @@ const navigator = createStackNavigator(
     ImagesScreen: ImagesScreen,
     ImageDetails: ImageDetails,
     ListScreen: ListScreen,
-    StateScreen: StateScreen
+    StateScreen: StateScreen,
+    DataScreen: DataScreen
    
 
   },
   {
-    initialRouteName:'StateScreen',
+    initialRouteName:'DataScreen',
     defaultNavigationOptions: {
       title: 'App'
     }
