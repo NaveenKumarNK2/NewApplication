@@ -31,6 +31,5 @@ export default StyleSheet.create ({
         height: '100%',
         alignItems:'center'
     }
-
-});
-
+}
+);

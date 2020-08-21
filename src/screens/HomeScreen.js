@@ -1,5 +1,5 @@
 import  React,{Component} from 'react';
-import { Text, View, Button, TextInput, Alert, Image, ImageBackground } from 'react-native';
+import { Text, View, Button, TextInput, Alert, ImageBackground } from 'react-native';
 import styles from './Styles'
 import bgImage from '../../assets/bgg.jpg'
 

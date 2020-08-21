@@ -11,12 +11,13 @@ const DataComponent = props => {
         
             <Image source = { props.imageSource}
              style={styles.imageView}  />
-            <Text style={styles.textStyle}>{props.name}</Text>
-            <Text style={styles.textStyle}>{props.no}</Text>
-            <Text style={styles.textStyle}>{props.Address}</Text>
-            <Text style={styles.textStyle}>{props.Landmark}</Text>
-            <Text style={styles.textStyle}>{props.City}</Text>
-           
+             <View style={styles.details}>
+            <Text>{props.name}</Text>
+            <Text>{props.no}</Text>
+            <Text>{props.Address}</Text>
+            <Text>{props.Landmark}</Text>
+            <Text>{props.City}</Text>
+            </View>
         </View>
        
     );
@@ -29,28 +30,34 @@ const styles = StyleSheet.create({
         backgroundColor:'skyblue',
         borderWidth:3,
         margin:10,
-        marginTop:20,
-        padding:20,
+        textAlign:"left",
+        padding:10,
+        textAlignVertical:"top"
   },
 
   imageView:{
     flex:2,
     alignItems:'flex-end',
-    justifyContent:'flex-end',
-    flexDirection:'column'
+    justifyContent:"flex-end",
+    alignSelf:'flex-end',
+    flexDirection:'column',
+    textAlignVertical:"bottom"
     
-  },
- 
-   textStyle:{
-        flex:3,
-        marginBottom: 5,
-        marginVertical:1,
-        flexDirection:'column',
-        alignItems:'flex-start'
-       
+    
       
-
-  }
+  },
+    details:{
+        
+        flex:3,
+       
+        
+        flexDirection:'column',
+        alignItems:'flex-start',
+        alignSelf:"flex-start",
+        textAlign:"left",
+        textAlignVertical:"top",
+        
+    }
    
 });
 

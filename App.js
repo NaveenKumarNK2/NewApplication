@@ -6,7 +6,8 @@ import ImageDetails from './src/Components/ImageDetails';
 import ListScreen from './src/screens/ListScreen';
 import StateScreen from './src/screens/StateScreen';
 import DataScreen from './src/screens/DataScreen';
-
+import LoginScreen from './src/screens/LoginScreen';
+import SignUp from './src/screens/SignUp';
 
 
 
@@ -17,12 +18,14 @@ const navigator = createStackNavigator(
     ImageDetails: ImageDetails,
     ListScreen: ListScreen,
     StateScreen: StateScreen,
-    DataScreen: DataScreen
+    DataScreen: DataScreen,
+    LoginScreen:LoginScreen,
+    SignUp:SignUp
    
 
   },
   {
-    initialRouteName:'DataScreen',
+    initialRouteName:'LoginScreen',
     defaultNavigationOptions: {
       title: 'App'
     }
