@@ -14,18 +14,20 @@ const LoginScreen = props  => {
             <Text>Login back into your account </Text></View>
 
             <View style ={styles.subBorder}>
-            <Text  style={{alignSelf:'flex-start',paddingLeft:20,paddingBottom:20}}> Log In</Text>
+            <Text  style={{color:'white',fontWeight:'bold',
+            fontSize:23,alignSelf:'flex-start',paddingLeft:20,paddingBottom:20}}> Log In</Text>
 
             <TextInput  style = {styles.input}  placeholder ="   E-mail " />
             <TextInput  style = {styles.input}  secureTextEntry = {true} placeholder ="   password "/>
             <Text style={{alignSelf:"flex-end",alignItems:'flex-end',paddingRight:10}}>Forgot Password?</Text>
             
-            <View  style = {styles.buttonStyle}>
-              
+            
              
-            <Button 
-            title= 'Log In'
-            /></View>
+            <TouchableOpacity style={styles.ButtonStyle}>
+            <Text style={styles.TextStyle}> LOGIN </Text>
+
+            </TouchableOpacity>
+            
             </View>
 
              <View style={styles.signupStyle}>
@@ -108,14 +110,28 @@ const styles = StyleSheet.create({
         alignSelf:'center'
        
             },
-    buttonStyle:{
-        width:150,
+    ButtonStyle:{
+        width:190,
         marginVertical:40,
-        borderRadius:50,
         alignSelf:'center',
-        elevation:2
+        elevation:2,
+        marginLeft:30,
+        marginRight:30,
+        paddingTop:10,
+        paddingBottom:10,
+        backgroundColor:'white',
+        borderRadius:30,
         
+    
+      },
+        
+    
+    TextStyle:{
+        alignItems:'center',
+        alignSelf:'center'
     },
+
+    
     signupStyle:{
         marginVertical:5,
         flexDirection:'row',

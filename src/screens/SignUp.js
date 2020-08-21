@@ -12,14 +12,19 @@ const SignUp = props => {
             <Text>Signup into your account</Text></View>
 
             <View style ={styles.subBorder}>
-            <Text  style={{alignSelf:'flex-start',paddingLeft:20,paddingBottom:20}}> Sign Up </Text>
+            <Text  style={{color:'white',fontWeight:'bold',
+            fontSize:23,alignSelf:'flex-start',paddingLeft:20,paddingBottom:20}}> Sign Up </Text>
 
             <TextInput  style = {styles.input}  placeholder ="   Full Name " />
             <TextInput style = {styles.input} placeholder = " E-mail" />
             <TextInput   style = {styles.input}  secureTextEntry = {true} placeholder ="    password " />
+             
+            <View style={styles.ButtonContainer}>
+            <TouchableOpacity style={styles.ButtonStyle}>
+            <Text style={styles.TextStyle}> SIGN UP </Text>
 
-            <View  style = {styles.buttonStyle}>
-            <Button title = 'Sign Up' /></View></View>
+            </TouchableOpacity>
+           </View></View>
 
             <View style={styles.loginStyle}>
             <Text>Already have an account?</Text>
@@ -62,13 +67,13 @@ const styles = StyleSheet.create({
     paddingLeft:20
    },
    subBorder:{
-    paddingTop:40,
-    paddingBottom:5,
+    paddingTop:30,
+    paddingBottom:0,
     backgroundColor:'lightgreen',
     marginRight:'5%',
     marginLeft:'5%',
-    marginBottom:'10%',
-    marginVertical:60,
+    marginBottom:'1%',
+    marginVertical:50,
     borderTopLeftRadius:70,
     borderTopRightRadius:70,
     borderBottomRightRadius:70,
@@ -102,14 +107,32 @@ const styles = StyleSheet.create({
         marginVertical:5
 
     },
-    buttonStyle:{
-        width:150,
-       borderRadius: 70,     
-       marginVertical:30,
-       alignSelf:'center',
-       
-       
+    ButtonContainer:{
+          
+        marginVertical:2,
+        paddingTop:2,
+        paddingHorizontal:2
+    
+
+    },
+    ButtonStyle:{
+        width:180,
+        marginVertical:40,
+        alignSelf:'center',
+        elevation:2,
+        marginLeft:30,
+        marginRight:30,
+        paddingTop:10,
+        paddingBottom:10,
+        backgroundColor:'white',
+        borderRadius:30,
+    },
+    TextStyle:{
+        alignItems:'center',
+        alignSelf:'center'
     }
+     
+    
 });
 
 export default SignUp;
